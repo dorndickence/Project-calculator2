@@ -1,0 +1,101 @@
+body {
+background-color:lightblue;
+position:absolute;
+
+
+}
+
+
+
+
+h1 {
+    color: blue;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: typing 1s steps(40, end) infinite alternate, blink-caret 1.5s step-end infinite alternate;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes blink-caret {
+    from, to {
+        border-color: transparent;
+    }
+    50% {
+        border-color: black;
+    }
+}
+
+
+
+
+
+.Container {
+  width:100%;
+  height:100%;
+  background-color:#e3f9ff;
+  
+
+
+} 
+
+.calculator{
+padding:20px;
+border-radius:10px;
+background-color:#3a4452;
+
+}
+
+.calculator form input {
+  border:0;
+  outline:0;
+  width:60px;
+  height:60px;
+  border-radius:10px;
+  font-size:20px;
+  cursor:pointer;
+  margin:10px;
+  box-shadow:-8px -8px 15px  rgba(255,255,255,0.1),-5px -5px 15px  rgba(0,0,0,0.2);
+  background:transparent;
+  font-size:20px;
+  color:#ffff;
+  cursor:pointer;
+}
+
+
+form .display {
+ display:flex;
+ justify-content:flex-end;
+background-color:black;
+ margin: 20px 0;
+ 
+
+}
+
+
+form .display input {
+text-align:right;
+flex:1;
+font-size:45px;
+box-shadow:none;
+
+
+}
+
+form input.operator  {
+color:#33ffd8;
+
+
+}
+
+form input.equal {
+width:145px;
+
+}
